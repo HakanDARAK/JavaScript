@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var randomSayi = Math.floor((Math.random()*10)+1);
+        var hak = prompt("Sizce kaçıncı denemede bulabilirsiniz? Unutmayınki her yanlış cevapta 20 puan kesilecektir aman eksiye düsmeyin :)");
+        if(hak>0&&hak<10)
+        {
+            alert("Evet "+hak+" hakkınınız var simdi başlayabilirsiniz.");
+            var sayac=0,puan=100;
+            while(hak>0)
+            {   
+            sayac++;
+            var tahmin = prompt(sayac+". tahmininizi giriniz");
+            if(puan<0)
+            {
+                alert("Malesef puanınız sıfırın altına düştügü için oyun burada biter!");
+                hak=-1;
+            }
+            if(tahmin == randomSayi)
+            {
+                alert(`Tebrikler ${sayac}. tahmininizde buldunuz,puanınız ${puan} ve üretilen sayı ${randomSayi} idi.`)
+                hak=-1;
+            }
+            puan-=20;
+            hak--;
+            if(hak==0)
+            {
+                alert(`Malesef iddaa ettiginiz gibi ${sayac}. seferde bulanadınız`)
+            }
+            }
+        }
+        else
+        {
+            alert("Tahmin hakkınız 1 ile 9 arasında olmalıdır");
+        }
+    </script>
+</body>
+</html>
