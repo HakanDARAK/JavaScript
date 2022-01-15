@@ -1,0 +1,42 @@
+main {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px 250px;
+    background-color: #360062;
+    width: 1250px;
+}
+.backg
+{
+    height:250px;
+    background-color: lightblue;;
+    margin: 1rem;
+    height: 250px;
+    margin: 1rem;
+    font-size: 7rem;
+    text-align: center;
+    line-height: 1rem;
+}
+.hideP{display: none;}
+.showP{display: inline;}
+
+.wrongbackground{
+    background-color: red;
+    height:250px;
+    margin: 1rem;
+    height: 250px;
+    margin: 1rem;
+    font-size: 7rem;
+    text-align: center;
+    line-height: 1rem;
+}
+
+#kullaniciAdi{
+    float: right;
+    position: absolute;
+    right: 10%;
+    color: lightseagreen;
+    
+}
+
+.score1{
+    color: lightseagreen;
+}
